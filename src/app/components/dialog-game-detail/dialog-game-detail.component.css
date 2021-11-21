@@ -1,0 +1,12 @@
+.top-description{
+    display: inline-flex;
+}
+
+.image-description {
+    width: 30%;
+}
+
+.description {
+    width: 70%;
+    margin-inline: 3%;
+}

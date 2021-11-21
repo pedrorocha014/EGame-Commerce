@@ -1,0 +1,14 @@
+.content {
+    padding: 16px;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.content > mat-card {
+    width: 20%;
+}
+
+.price {
+    padding-left: 75%;
+}

@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>{{ data.game.title }}</h2>
+
+<mat-dialog-content class="mat-typography">
+  <div class="top-description">
+    <img class="image-description" [src]="data.game.image">
+    <div class="description">
+      {{ data.game.description }}
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="addToCart(data.game)" >Add to Cart</button>
+</mat-dialog-actions>

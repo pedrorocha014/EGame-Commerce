@@ -1,0 +1,23 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let game of gamesData.gamesArray">
+            <mat-card class="mat-elevation-z4">
+                <input type="hidden" [name]="game.id">
+                <mat-card-header>
+                    <mat-card-title>{{ game.title }}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="game.image"/>
+                <mat-card-content>
+                    <p>
+                        {{ game.description }}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button (click)="addToCart(game)">Add to Cart</button>
+                    <button mat-button (click)="openDialog(game)">Details</button>
+                    <div class="price">USD {{ game.price.toFixed(2) }}</div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
